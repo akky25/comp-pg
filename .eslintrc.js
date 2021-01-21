@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "airbnb-base",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/react",
@@ -13,5 +14,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
   },
-  rules: {},
+  rules: {
+    "no-console": "off",
+  },
 };

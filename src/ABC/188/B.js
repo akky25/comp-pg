@@ -1,15 +1,13 @@
-const { networkInterfaces } = require("os");
-
 function main(input) {
-  input = input.trim().split("\n");
+  const lines = input.trim().split("\n");
 
-  const n = +input[0];
-  const a = input[1].split(" ").map((v) => +v);
-  const b = input[2].split(" ").map((v) => +v);
+  const n = +lines[0];
+  const a = lines[1].split(" ");
+  const b = lines[2].split(" ");
 
   let ip = 0;
-  for (i = 0; i < n; i++) {
-    ip += a[i] * b[i];
+  for (let i = 0; i < n; i += 1) {
+    ip += +a[i] * +b[i];
   }
   console.log(ip === 0 ? "Yes" : "No");
 }

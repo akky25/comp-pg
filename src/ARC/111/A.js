@@ -1,5 +1,7 @@
 function main(input) {
-  input = input.trim().split("\n");
+  const [N, M] = input.trim().split(" ").map(Number);
+  const ans = Math.floor(10 ** N / M) % M;
+  console.log(ans);
 }
 
 // main(require("fs").readFileSync("/dev/stdin", "utf8"));

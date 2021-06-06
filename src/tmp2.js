@@ -1,3 +1,4 @@
-const arr = ["ant", "bison", "elephant"];
-const newArr = arr.concat();
-console.log(newArr);
+console.log((1 | 3) ^ (3 | 1));
+console.log(1 ^ (1 | 3 | 1));
+console.log((1 | 3 | 3) ^ 1);
+console.log(2 ** 30);
